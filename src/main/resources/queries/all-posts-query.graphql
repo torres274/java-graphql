@@ -1,0 +1,15 @@
+query AllPosts {
+    allPosts {
+        id
+        content
+        likedBy {
+            username
+            email
+            name
+        }
+        comments
+        createdAt
+        lastModified
+        version
+    }
+}

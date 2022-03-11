@@ -1,0 +1,15 @@
+mutation AddComment($postId: String!, $comment: String!) {
+    addComment(postId: $postId, comment: $comment) {
+        id
+        content
+        likedBy {
+            username
+            email
+            name
+        }
+        comments
+        createdAt
+        lastModified
+        version
+    }
+}

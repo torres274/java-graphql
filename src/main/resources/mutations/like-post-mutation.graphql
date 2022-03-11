@@ -1,0 +1,15 @@
+mutation LikePost($postId: String!, $userInput: UserInput!) {
+    likePost(postId: $postId, user: $userInput) {
+        id
+        content
+        likedBy {
+            username
+            email
+            name
+        }
+        comments
+        createdAt
+        lastModified
+        version
+    }
+}
