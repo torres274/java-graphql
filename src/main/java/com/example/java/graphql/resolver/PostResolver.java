@@ -9,6 +9,14 @@ import org.springframework.stereotype.Component;
 @RequiredArgsConstructor
 public class PostResolver implements GraphQLResolver<Post> {
 
-    
+    // private ExampleRepository exampleRepository;
+
+    // public PostResolver(ExampleRepository exampleRepository) {
+        // this.exampleRepository = exampleRepository;
+    // }
+
+    // public Example example(Post post) {
+        // return exampleRepository.findById(post.getId());
+    // }
 
 }
